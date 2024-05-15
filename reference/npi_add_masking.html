@@ -66,7 +66,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">npi_add_masking</span><span class="op">(</span><span class="va">model</span>, <span class="va">preval</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">npi_add_masking</span><span class="op">(</span><span class="va">model</span>, <span class="va">preval</span>, <span class="va">transmission_reduction</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -77,6 +77,10 @@
 
 <dt>preval</dt>
 <dd><p>Prevalence of masking within the population.</p></dd>
+
+
+<dt>transmission_reduction</dt>
+<dd><p>Reduction in transmission probability due to masking</p></dd>
 
 </dl></div>
     <div id="value">
@@ -106,6 +110,7 @@ substituted with the model name.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| done.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  done.</span>
 <span class="r-in"><span><span class="fu">npi_add_masking</span><span class="op">(</span><span class="va">model</span>, preval <span class="op">=</span> <span class="fl">.8</span><span class="op">)</span></span></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in npi_add_masking(model, preval = 0.8):</span> argument "transmission_reduction" is missing, with no default</span>
 </code></pre></div>
     </div>
   </div>
